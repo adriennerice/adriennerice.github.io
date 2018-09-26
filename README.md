@@ -1,3 +1,2 @@
-# adriennerice.github.io
-My Personal Site
-Mod
+# Basic-Portfolio
+My Development Portfolio
