@@ -3,66 +3,75 @@
 
 <head>
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"><!--Automatically added by VS Code-->
     <title>Adrienne Rice</title>
-    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 </head>
 
 <body>
-    <div class="wrapper"> <!-- wrapper used for sticky footer-->
-    <header class="header">
-        <div class="headerSection">
-            <div class="name">
-                <h1>Adrienne Rice</h1>
-            </div>
-            <!--Working navigation links-->
-            <div class="nav">
-                <ul>
-                        <li><a href="index.html">About</a></li>
-                        <li><a href="portfolio.html">|&nbsp;&nbsp;&nbsp;&nbsp;Portfolio&nbsp;&nbsp;&nbsp;&nbsp;|</a></li><!--Added multiple spaces for aesthetics-->
-                        <li><a href="contact.html">Contact</a></li>
-                </ul>
+    <div class="container-fluid">
+        <div class="row">
+                    <div class="col-lg-1"></div>
+                    <div class="col-lg-3 name">
+                        <h1>Adrienne Rice</h1>
+                    </div>
+                    <div class="col-lg-7 navAlign">
+                        <ul class="nav justify-content-end">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="index.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="portfolio.html">Portfolio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class ="col-lg-1"></div>
+        </div>
+
+        <div class="row mainBg">
+            <div class="col">
+                <div class="row">
+                    <div class ="col-lg-1"></div>
+                    <div class="col-lg-10 a bg-light mainContainer">
+                        <h2>About Me</h2>
+
+                        <hr>
+                        <img id="selfImage" src="assets/images/profile.jpg" alt="Photo of Adrienne Rice">
+                        
+                        <p>
+                            I'm Adrienne, a software engineer living in Charlotte, NC. I'm passionate about creating awesome products with enjoyable user experiences. 
+                            I've showcased my work on my <a href="portfolio.html" target="_blank"> portfolio page</a> so please take a look at my work. I'm excited to share them with you and I'm open to your feedback. Please <a href="contact.html" target="_blank">contact me</a> if you would like to know more about my work. 
+                        </p>
+            
+                        
+                        <!--Programming language icons from Devicon http://konpa.github.io/devicon/-->
+                        <h2>Progression Badges</h2> 
+                        <hr>
+                        <i class="devicon-html5-plain-wordmark colored"></i> 
+                        <i class="devicon-css3-plain-wordmark colored"></i><!--Didn't have CSS4 boo-->
+                        <i class="devicon-bootstrap-plain-wordmark colored"></i>
+                        <i class="devicon-chrome-plain-wordmark colored"></i> 
+                        <i class="devicon-github-plain colored"></i>
+                        <i class="devicon-git-plain colored"></i>
+                        <i class="devicon-gitlab-plain-wordmark colored"></i>
+                    </div>
+                    <div class ="col-lg-1"></div>
+                </div>
             </div>
         </div>
-    </header>
-    <section class="main">
-
-            <br>
-
-        <div class="container">
-            <h2>About Me</h2>
-
-            <hr>
-            <img id="selfImage" src="assets/images/profile.jpg" alt="Photo of Adrienne Rice">
-            
-            <p>
-                I'm Adrienne, a software engineer living in Charlotte, NC. I'm passionate about creating awesome products with enjoyable user experiences. 
-                I've showcased my work on my <a href="portfolio.html" target="_blank"> portfolio page</a> so please take a look at my work. I'm excited to share them with you and I'm open to your feedback. Please <a href="contact.html" target="_blank">contact me</a> if you would like to know more about my work. 
-            </p>
-
-            
-            <!--Programming language icons from Devicon http://konpa.github.io/devicon/-->
-            <h2>Progression Badges</h2> 
-            <hr>
-            <i class="devicon-html5-plain-wordmark colored"></i> 
-            <i class="devicon-css3-plain-wordmark colored"></i><!--Didn't have CSS4 boo-->
-            <i class="devicon-bootstrap-plain-wordmark colored"></i>
-            <i class="devicon-chrome-plain-wordmark colored"></i> 
-            <i class="devicon-github-plain colored"></i>
-            <i class="devicon-git-plain colored"></i>
-            <i class="devicon-gitlab-plain-wordmark colored"></i>  
-        </div>
-            <br><br>
-    </section>
-    </div>
-
-    <footer class="footer">
-        <div class="wrapper2"><!-- wrapper used for sticky footer via table-->
-            <div class="copy">
+        <div class="row">
+            <div class="col-lg-12 footer container-fluid">
                 Copyright &copy;
             </div>
         </div>
-    </footer>
+    </div>
+        
+
+    
 </body>
 </html>  

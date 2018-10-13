@@ -2,22 +2,16 @@
     box-sizing: border-box;
   }
 
-/*Used for sticky footer*/
-html,
 body {
+    font-size: 18px;
+    line-height: 34px;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif; 
+    color: #777;
+
     margin: 0;
     display: table;
     height: 100%;
     width: 100%;
-}  
-body {
-    color: #777777;
-    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif; 
-}
-
-img {
-    width: 300px;
-    height: 200px;
 }
 
 h1,
@@ -31,122 +25,26 @@ h2 {
     font-family: 'Georgia', Times, Times New Roman, serif;
 }
 
-h3 {
-    position: relative;
-    z-index: 2;
-    left: 0;
-    bottom: 75px;
-    background-color: #4aaaa5;
-    padding: 10px 0 10px 10px;
-    width: 300px;
-    
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-li {
-    float: right;
-}
-
-li a {
-    display: block;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-.header {
-    background: #ffffff;
-    width: 100%;
-}
-
-.headerSection {
-    position: relative;
-    width: 960px;
-    padding: 35px;
-    margin: auto;
-}
-.nav {
-    position: absolute;
-    float: right;
-    bottom: 0;
-    right: 0;
-    margin: auto;
-}
-
 .name {
-    position: absolute;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 20px;
-    float: left;
-    bottom: 0;
-    left: 0;
-    width: 0 auto;
     background-color: #4aaaa5;
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px
 }
 
-/*Main body of page and houses the content container*/
-.main {
-    background-image: url("../images/pinkdust.png");
-    clear: both;
-}
-
-/*Holds content*/
-.container {
-    background: #ffffff;
-    margin: auto;
-    width: 960px;
-    padding: 20px; 
-    clear: both;
-    overflow: hidden; 
-}
-
-.footer {
-    clear: left;
-    border-top: 8px solid #4aaaa5;
-    display: table-row;
-    height: 1px;
-    background: #666666;
-    width: 100%;
-    color: #ffffff;
-    text-align: center; 
-}
-
-/*Used for sticky footer: Main section minus the footer*/
-.wrapper { 
+.navAlign {
     padding: 20px;
-    height: auto;
 }
+.mainBg {
+    background-color: pink;  
+    background: url(../images/pinkdust.png)
+  }
 
-/*Used for sticky footer: footer*/
-.wrapper2 {
+.mainContainer {
     padding: 20px;
-    height: auto;
-    border-top: 8px solid #4aaaa5;
-}
-
-.about,
-.portfolio,
-.contact {
-    float: right;
-    width: 0 auto;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-.fullName,
-.email,
-.message {
-    width: 920px;
-}
-
-.message {
-    height:200px;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 #selfImage {
@@ -155,34 +53,38 @@ li a {
     height: 200px;
 }
 
-/*Portfolio sections*/
-.pItem1,
-.pItem2,
-.pItem3,
-.pItem4,
-.pItem5 {
-    float: left;
-    position: relative;
-    z-index: 1;
-}
-
-.pItem3,
-.pItem5 {
-    clear: left;
-}
-
-.pItem2,
-.pItem4 {
-    margin-left: 20px;
-}
-
-/*Copyright in footer*/
-.copy {
-    width: 0 auto;
-}
-/*Contact form submit button*/
-#submit {
+button {
     background-color: #4aaaa5;
     color: #ffffff; 
+}
+
+.card,
+.card-img {
+    width: 300px;
+    height: 200px;
+}
+
+.card {
+    margin-bottom: 40px;
+}
+.card-img-overlay {
+    top:110px;
+    height:70px;
+    background-color: #4aaaa5;
+}
+
+.footer {
+    border-top: 8px solid #4aaaa5;
+    background: #666666;
+    color: #ffffff;
+    text-align: center; 
+    width: 100%;    
+    padding: 20px;
+}
+
+
+img {
+    width: 300px;
+    height: 200px;
 }
 

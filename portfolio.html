@@ -1,76 +1,105 @@
 <!DOCTYPE html>
 <html lang="en-us">
+
 <head>
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Adrienne Rice</title>
-    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 </head>
+
 <body>
-    <div class="wrapper">
-    <header class="header">
-         <div class="headerSection">
-            <div class="name">
-                 <h1>Adrienne Rice</h1>
-            </div>
-            <div class="nav">
-                 <ul>
-                    <li><a href="index.html">About</a></li>
-                    <li><a href="portfolio.html">|&nbsp;&nbsp;&nbsp;&nbsp;Portfolio&nbsp;&nbsp;&nbsp;&nbsp;|</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-1"></div>
+                <div class="col-lg-3 name">
+                    <h1>Adrienne Rice</h1>
+                </div>
+                <div class="col-lg-7 navAlign">
+                    <ul class="nav justify-content-end">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">About</a>
+                        </li>
+                         <li class="nav-item">
+                            <a class="nav-link" href="portfolio.html">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class ="col-lg-1"></div>
         </div>
-    </header>
-    <section class="main">
-        <br>
-        <div class="container">
-            <div>
-                <h2>Portfolio</h2>
-                <hr>
+
+        <div class="row mainBg">
+            <div class="col">
+                <div class="row">
+                    <div class ="col-lg-1"></div>
+                    <div class="col-lg-10 a bg-light mainContainer">
+                        <h2>Portfolio</h2>
+                        <hr>
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <div class="card">
+                                  <img class="card-img" src="assets/images/image1.jpeg" alt="Hangman project image">
+                                  <div class="card-img-overlay">
+                                    <h3 class="card-title">Hangman</h3>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-5">
+                                <div class="card">
+                                  <img class="card-img" src="assets/images/image2.jpeg" alt="RPG Game project image">
+                                  <div class="card-img-overlay">
+                                    <h3 class="card-title">RPG Game</h3>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <div class="card">
+                                  <img class="card-img" src="assets/images/image3.jpeg" alt="Trivia Game project image">
+                                  <div class="card-img-overlay">
+                                    <h3 class="card-title">Trivia Game</h3>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-5">
+                                <div class="card">
+                                  <img class="card-img" src="assets/images/image4.jpeg" alt="Rutgers Info Widget project image">
+                                  <div class="card-img-overlay">
+                                    <h3 class="card-title">Rutgers Info Widget</h3>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <div class="card">
+                                    <img class="card-img" src="assets/images/image5.jpeg" alt="Rock Paper Scissors project image">
+                                    <div class="card-img-overlay">
+                                        <h3 class="card-title">Rock Paper Scissors</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-5">
+                            </div>
+                        </div>
+                    <div class ="col-lg-1"></div>
+                </div>
             </div>
-             <div>  
-                <section class="pItem1">
-                    <div>
-                        <img src="assets/images/image1.jpeg" alt="Hangman project image" class="placeHolder">
-                        <h3>Hangman</h3>
-                    </div>
-                </section>
-                <section class="pItem2">
-                    <div>
-                        <img src="assets/images/image2.jpeg" alt="RPG Game project image" class="placeHolder">
-                        <h3>RPG Game</h3>
-                    </div>
-                </section>
-                <section class="pItem3">
-                    <div>
-                        <img src="assets/images/image3.jpeg" alt="Trivia Game project image" class="placeHolder">
-                        <h3>Trivia Game</h3>
-                    </div>
-                </section>
-                <section class="pItem4">
-                    <div>
-                        <img src="assets/images/image4.jpeg" alt="Rutgers Info Widget project image" class="placeHolder">
-                        <h3>Rutgers Info Widget</h3>
-                    </div>
-                </section>
-                <section class="pItem5">
-                    <div>
-                        <img src="assets/images/image5.jpeg" alt="Rock Paper Scissors project image" class="placeHolder">
-                        <h3>Rock Paper Scissors</h3>
-                    </div>
-                </section>
-            </div>
-         </div>
-         <br><br>
-    </section>
+        </div>  
     </div>
-    <footer class="footer">
-        <div class="wrapper2">
-            <div class="copy">
+    
+    <div class="row">
+            <div class="col-lg-12 footer">
                 Copyright &copy;
             </div>
-        </div>
-    </footer>
+    </div>    
+
+    
 </body>
 </html>  
